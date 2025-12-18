@@ -1,5 +1,11 @@
 header {
-    margin-top: 10px;
+    position: fixed; /* Sticks to the viewport */
+    top: 0;          /* Positions at the top */
+    width: 100%;     /* Full width */
+    z-index: 100;    /* Ensures it's on top */
+    background-color: var(--background); /* maintain the background-color */
+    height: 60px;
+    padding-top: 14px; 
 }
 
 section-header {
@@ -438,3 +444,82 @@ footer {
     text-align: center;
     margin: 48px 0 32px 0;
 }
+
+
+/* Works page */
+.works {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 53px;
+}
+
+.works h2 {
+    margin-bottom: 14px;
+}
+
+.works h2::before {
+    content: "/";
+    color: var(--primary);
+}
+
+.works p {
+    font-size: 16px;
+    color: var(--white);
+    margin-top: 0;
+    margin-bottom: 68px;
+}
+
+.completed-projects-header h2 {
+    margin-bottom: 48px;
+}
+
+.completed-projects-header h2::before {
+    content: "#";
+    color: var(--primary);
+}
+
+.small-category {
+    max-width: 300px;
+    min-width: 200px;
+}
+.small-category ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 8px;
+    gap: 8px;
+    color: var(--gray);
+    margin: 0;
+    border: 1px solid var(--gray);
+}
+
+.small-category-header {
+    margin: 16px;
+    max-width: 300px;
+    min-width: 200px;
+}
+
+.small-category-header h4{
+    color: var(--white);
+    margin: 0;
+    padding: 8px;
+    font-size: 24px;
+}
+
+.project-links-button {
+    margin: 16px 187px 16px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.small-skills-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    align-items: start;
+}
+
+
+/* About Page */
+
